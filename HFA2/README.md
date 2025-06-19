@@ -32,7 +32,7 @@ This application provides automated email processing capabilities:
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd email-processor
+   cd HFA2
    ```
 
 2. **Install dependencies**
@@ -65,7 +65,7 @@ This application provides automated email processing capabilities:
 The application uses these default database settings:
 - Host: `localhost`
 - Port: `5432`
-- User: `postgres`
+- User: Current system user (or `postgres` if not available)
 - Password: (empty)
 - Database: `email_processor`
 
@@ -80,7 +80,6 @@ EMAIL_FETCH_LIMIT = 100  # Change this value as needed
 ```
 
 ### Rules Configuration
-I wrote some rules myself and generated some other ones using the same format using ChatGPT :D
 
 Rules are defined in `rules.json`. Each rule has:
 
@@ -101,20 +100,21 @@ Rules are defined in `rules.json`. Each rule has:
 - `mark_as_unread`: Mark email as unread
 - `move`: Move email to specified mailbox/folder
 
-#### Example Rule
+#### Example Rules
+
+The project includes several pre-configured rules:
 
 ```json
 {
-    "rule_name": "Interview Emails",
-    "predicate": "ALL",
+    "rule_name": "Critical Security Alerts",
+    "predicate": "ANY",
     "conditions": [
-        {"field": "from", "operator": "contains", "value": "tenmiles.com"},
-        {"field": "subject", "operator": "contains", "value": "Interview"},
-        {"field": "received_date", "operator": "less_than_days", "value": 2}
+        {"field": "subject", "operator": "contains", "value": "Security Alert"},
+        {"field": "from", "operator": "contains", "value": "security@"}
     ],
     "actions": [
-        {"action": "move", "mailbox": "InterviewFolder"},
-        {"action": "mark_as_read"}
+        {"action": "mark_as_unread"},
+        {"action": "move", "mailbox": "Security Alerts"}
     ]
 }
 ```
@@ -165,7 +165,7 @@ pytest -v tests/
 ## Project Structure
 
 ```
-email_processor/
+HFA2/
 ├── src/
 │   ├── __init__.py
 │   ├── config.py          # Configuration and rule loading
@@ -258,8 +258,34 @@ For detailed debugging, you can modify the logging level in `src/main.py`:
 ```python
 root_logger.setLevel(logging.DEBUG)
 ```
-HOW TO RUN:
 
-You'll need to recreate these files locally:
-Download credentials.json from Google Cloud Console
-Run the app once to generate token.json
+## How to Run
+
+1. **Set up the required files:**
+   - Download `credentials.json` from Google Cloud Console
+   - Place it in the project root directory
+
+2. **Run the application:**
+   ```bash
+   python -m src.main
+   ```
+   
+   The first run will:
+   - Generate `token.json` after OAuth authentication
+   - Create the database table if it doesn't exist
+   - Process emails according to the rules in `rules.json`
+
+3. **Monitor the output:**
+   - Check console output for processing status
+   - Review `errors.log` for any issues
+   - Verify emails are being processed in Gmail
+
+## Dependencies
+
+The application requires the following Python packages (see `requirements.txt`):
+
+- `google-auth-oauthlib>=1.0.0` - Gmail OAuth authentication
+- `google-api-python-client>=2.88.0` - Gmail API client
+- `psycopg2-binary>=2.9.7` - PostgreSQL database adapter
+- `python-dateutil>=2.8.2` - Date parsing utilities
+- `pytest>=7.4.0` - Testing framework
