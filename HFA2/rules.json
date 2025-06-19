@@ -1,0 +1,105 @@
+[
+    {
+        "rule_name": "Critical Security Alerts",
+        "predicate": "ANY",
+        "conditions": [
+            {"field": "subject", "operator": "contains", "value": "Security Alert"},
+            {"field": "from", "operator": "contains", "value": "security@"}
+        ],
+        "actions": [
+            {"action": "mark_as_unread"},
+            {"action": "move", "mailbox": "Security Alerts"}
+        ]
+    },
+    {
+        "rule_name": "Interview Communications",
+        "predicate": "ANY",
+        "conditions": [
+            {"field": "subject", "operator": "contains", "value": "Interview"},
+            {"field": "from", "operator": "contains", "value": "hr@"}
+        ],
+        "actions": [
+            {"action": "move", "mailbox": "Interview Communications"},
+            {"action": "mark_as_unread"}
+        ]
+    },
+    {
+        "rule_name": "Job Applications & Opportunities",
+        "predicate": "ANY",
+        "conditions": [
+            {"field": "subject", "operator": "contains", "value": "Job Application"},
+            {"field": "from", "operator": "contains", "value": "linkedin.com"}
+        ],
+        "actions": [
+            {"action": "move", "mailbox": "Career/Opportunities"},
+            {"action": "mark_as_read"}
+        ]
+    },
+    {
+        "rule_name": "Spam & Promotional Cleanup",
+        "predicate": "ALL",
+        "conditions": [
+            {"field": "subject", "operator": "contains", "value": "URGENT"},
+            {"field": "subject", "operator": "contains", "value": "Act Now"},
+            {"field": "received_date", "operator": "less_than_days", "value": 7}
+        ],
+        "actions": [
+            {"action": "move", "mailbox": "DELETEEEE !!!!"},
+            {"action": "mark_as_read"}
+        ]
+    },
+    {
+        "rule_name": "Social Media Notifications",
+        "predicate": "ANY",
+        "conditions": [
+            {"field": "from", "operator": "contains", "value": "facebook.com"},
+            {"field": "from", "operator": "contains", "value": "twitter.com"},
+            {"field": "from", "operator": "contains", "value": "instagram.com"},
+            {"field": "from", "operator": "contains", "value": "notification@"}
+        ],
+        "actions": [
+            {"action": "move", "mailbox": "Social Media"},
+            {"action": "mark_as_read"}
+        ]
+    },
+    {
+        "rule_name": "E-commerce & Shopping",
+        "predicate": "ANY",
+        "conditions": [
+            {"field": "subject", "operator": "contains", "value": "Order Confirmation"},
+            {"field": "subject", "operator": "contains", "value": "Shipping Update"},
+            {"field": "from", "operator": "contains", "value": "amazon.com"},
+            {"field": "from", "operator": "contains", "value": "orders@"}
+        ],
+        "actions": [
+            {"action": "move", "mailbox": "Shopping/Orders"},
+            {"action": "mark_as_unread"}
+        ]
+    },
+    {
+        "rule_name": "BMSIT Placement",
+        "predicate": "ALL",
+        "conditions": [
+            {"field": "from", "operator": "contains", "value": "@bmsit.in"},
+            {"field": "subject", "operator": "contains", "value": "Hiring"}
+        ],
+        "actions": [
+            {"action": "move", "mailbox": "Placement Emails"},
+            {"action": "mark_as_unread"}
+        ]
+    },
+    {
+        "rule_name": "Educational & Learning",
+        "predicate": "ANY",
+        "conditions": [
+            {"field": "from", "operator": "contains", "value": "coursera.com"},
+            {"field": "from", "operator": "contains", "value": "udemy.com"},
+            {"field": "subject", "operator": "contains", "value": "Course"},
+            {"field": "subject", "operator": "contains", "value": "Learning"}
+        ],
+        "actions": [
+            {"action": "move", "mailbox": "Education/Learning"},
+            {"action": "mark_as_read"}
+        ]
+    }
+] 

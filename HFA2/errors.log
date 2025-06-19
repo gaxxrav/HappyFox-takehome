@@ -1,0 +1,79 @@
+2025-06-18 20:20:43,700 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'InterviewFolder'} for email 1978384374da99d6: name 'email' is not defined
+2025-06-18 20:20:44,827 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'InterviewFolder'} for email 197837e536c491de: name 'email' is not defined
+2025-06-18 20:20:46,405 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'InterviewFolder'} for email 19783386f5bea02e: name 'email' is not defined
+2025-06-18 20:29:17,395 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'InterviewFolder'} for email 1978384374da99d6: name 'email' is not defined
+2025-06-18 21:08:41,600 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interviews Communications'} for email 19783abab16a647c: name 'email' is not defined
+2025-06-18 21:08:43,499 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Security Alerts'} for email 19783aa6fd85c451: name 'email' is not defined
+2025-06-18 21:08:44,221 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interviews Communications'} for email 1978384374da99d6: name 'email' is not defined
+2025-06-18 21:09:59,618 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interviews Communications'} for email 19783abab16a647c: name 'email' is not defined
+2025-06-18 21:10:01,664 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Security Alerts'} for email 19783aa6fd85c451: name 'email' is not defined
+2025-06-18 21:10:02,323 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interviews Communications'} for email 1978384374da99d6: name 'email' is not defined
+2025-06-18 21:10:59,142 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interviews Communications'} for email 19783abab16a647c: name 'email' is not defined
+2025-06-18 21:11:00,748 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Security Alerts'} for email 19783aa6fd85c451: name 'email' is not defined
+2025-06-18 21:11:01,524 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interviews Communications'} for email 1978384374da99d6: name 'email' is not defined
+2025-06-18 21:11:31,572 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interviews Communications'} for email 19783abab16a647c: name 'email' is not defined
+2025-06-18 21:11:33,305 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Security Alerts'} for email 19783aa6fd85c451: name 'email' is not defined
+2025-06-18 21:11:34,117 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interviews Communications'} for email 1978384374da99d6: name 'email' is not defined
+2025-06-18 21:13:05,972 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interviews Communications'} for email 19783abab16a647c: name 'email' is not defined
+2025-06-18 21:13:07,929 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Security Alerts'} for email 19783aa6fd85c451: name 'email' is not defined
+2025-06-18 21:13:08,751 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interviews Communications'} for email 1978384374da99d6: name 'email' is not defined
+2025-06-18 21:14:48,694 - src.gmail_api - ERROR - Failed to get/create label 'Trash': <HttpError 400 when requesting https://gmail.googleapis.com/gmail/v1/users/me/labels?alt=json returned "Invalid label name". Details: "[{'message': 'Invalid label name', 'domain': 'global', 'reason': 'invalidArgument'}]">
+2025-06-18 21:14:48,695 - src.rule_engine - ERROR - Failed to move email 19783b6b679c2206 to folder Trash in Gmail
+2025-06-18 21:14:48,695 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Trash'} for email 19783b6b679c2206: name 'email' is not defined
+2025-06-18 21:14:50,027 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interviews Communications'} for email 19783abab16a647c: name 'email' is not defined
+2025-06-18 21:14:51,676 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Security Alerts'} for email 19783aa6fd85c451: name 'email' is not defined
+2025-06-18 21:14:52,452 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interviews Communications'} for email 1978384374da99d6: name 'email' is not defined
+2025-06-18 21:17:17,789 - src.gmail_api - ERROR - Failed to get/create label 'Bin': <HttpError 400 when requesting https://gmail.googleapis.com/gmail/v1/users/me/labels?alt=json returned "Invalid label name". Details: "[{'message': 'Invalid label name', 'domain': 'global', 'reason': 'invalidArgument'}]">
+2025-06-18 21:17:17,789 - src.rule_engine - ERROR - Failed to move email 19783b6b679c2206 to folder Bin in Gmail
+2025-06-18 21:17:17,789 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Bin'} for email 19783b6b679c2206: name 'email' is not defined
+2025-06-18 21:17:18,860 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interviews Communications'} for email 19783abab16a647c: name 'email' is not defined
+2025-06-18 21:17:20,242 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Security Alerts'} for email 19783aa6fd85c451: name 'email' is not defined
+2025-06-18 21:17:20,965 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interviews Communications'} for email 1978384374da99d6: name 'email' is not defined
+2025-06-18 21:19:17,545 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'DELETE ALLAT'} for email 19783b6b679c2206: name 'email' is not defined
+2025-06-18 21:19:18,826 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interviews Communications'} for email 19783abab16a647c: name 'email' is not defined
+2025-06-18 21:19:20,775 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Security Alerts'} for email 19783aa6fd85c451: name 'email' is not defined
+2025-06-18 21:19:21,539 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interviews Communications'} for email 1978384374da99d6: name 'email' is not defined
+2025-06-18 21:19:46,374 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'DELETEEEE !!!!'} for email 19783b6b679c2206: name 'email' is not defined
+2025-06-18 21:19:47,704 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interviews Communications'} for email 19783abab16a647c: name 'email' is not defined
+2025-06-18 21:19:49,099 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Security Alerts'} for email 19783aa6fd85c451: name 'email' is not defined
+2025-06-18 21:19:49,788 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interviews Communications'} for email 1978384374da99d6: name 'email' is not defined
+2025-06-18 21:20:39,503 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'DELETEEEE !!!!'} for email 19783b6b679c2206: name 'email' is not defined
+2025-06-18 21:20:40,953 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interview Communications'} for email 19783abab16a647c: name 'email' is not defined
+2025-06-18 21:20:42,489 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Security Alerts'} for email 19783aa6fd85c451: name 'email' is not defined
+2025-06-18 21:20:43,514 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interview Communications'} for email 1978384374da99d6: name 'email' is not defined
+2025-06-18 22:00:28,358 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Placement Emails'} for email 19783e05de91322e: name 'email' is not defined
+2025-06-18 22:00:29,869 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'DELETEEEE !!!!'} for email 19783dea2dba66ed: name 'email' is not defined
+2025-06-18 22:00:31,428 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Career/Opportunities'} for email 19783de127f38c39: name 'email' is not defined
+2025-06-18 22:00:32,839 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interview Communications'} for email 19783dd4f757bbb7: name 'email' is not defined
+2025-06-18 22:00:34,812 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Security Alerts'} for email 19783dbf3254c569: name 'email' is not defined
+2025-06-18 22:00:35,471 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'DELETEEEE !!!!'} for email 19783b6b679c2206: name 'email' is not defined
+2025-06-18 22:00:36,493 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interview Communications'} for email 19783abab16a647c: name 'email' is not defined
+2025-06-18 22:00:38,129 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Security Alerts'} for email 19783aa6fd85c451: name 'email' is not defined
+2025-06-18 22:00:38,906 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interview Communications'} for email 1978384374da99d6: name 'email' is not defined
+2025-06-19 06:25:43,294 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Placement Emails'} for email 19783e05de91322e: name 'email' is not defined
+2025-06-19 06:25:44,523 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'DELETEEEE !!!!'} for email 19783dea2dba66ed: name 'email' is not defined
+2025-06-19 06:25:45,751 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Career/Opportunities'} for email 19783de127f38c39: name 'email' is not defined
+2025-06-19 06:25:46,811 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interview Communications'} for email 19783dd4f757bbb7: name 'email' is not defined
+2025-06-19 06:25:48,311 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Security Alerts'} for email 19783dbf3254c569: name 'email' is not defined
+2025-06-19 06:25:49,094 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'DELETEEEE !!!!'} for email 19783b6b679c2206: name 'email' is not defined
+2025-06-19 06:25:50,360 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interview Communications'} for email 19783abab16a647c: name 'email' is not defined
+2025-06-19 06:25:51,895 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Security Alerts'} for email 19783aa6fd85c451: name 'email' is not defined
+2025-06-19 06:25:52,563 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interview Communications'} for email 1978384374da99d6: name 'email' is not defined
+2025-06-19 06:45:40,975 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Placement Emails'} for email 19783e05de91322e: name 'email' is not defined
+2025-06-19 06:45:42,350 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'DELETEEEE !!!!'} for email 19783dea2dba66ed: name 'email' is not defined
+2025-06-19 06:45:43,536 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Career/Opportunities'} for email 19783de127f38c39: name 'email' is not defined
+2025-06-19 06:45:44,765 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interview Communications'} for email 19783dd4f757bbb7: name 'email' is not defined
+2025-06-19 06:45:46,403 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Security Alerts'} for email 19783dbf3254c569: name 'email' is not defined
+2025-06-19 06:45:47,622 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'DELETEEEE !!!!'} for email 19783b6b679c2206: name 'email' is not defined
+2025-06-19 06:45:48,655 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interview Communications'} for email 19783abab16a647c: name 'email' is not defined
+2025-06-19 06:45:50,806 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Security Alerts'} for email 19783aa6fd85c451: name 'email' is not defined
+2025-06-19 06:45:51,522 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interview Communications'} for email 1978384374da99d6: name 'email' is not defined
+2025-06-19 06:50:23,829 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Placement Emails'} for email 19783e05de91322e: name 'email' is not defined
+2025-06-19 06:50:24,818 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'DELETEEEE !!!!'} for email 19783dea2dba66ed: name 'email' is not defined
+2025-06-19 06:50:25,819 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Career/Opportunities'} for email 19783de127f38c39: name 'email' is not defined
+2025-06-19 06:50:27,082 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interview Communications'} for email 19783dd4f757bbb7: name 'email' is not defined
+2025-06-19 06:50:28,579 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Security Alerts'} for email 19783dbf3254c569: name 'email' is not defined
+2025-06-19 06:50:29,347 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'DELETEEEE !!!!'} for email 19783b6b679c2206: name 'email' is not defined
+2025-06-19 06:50:30,375 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interview Communications'} for email 19783abab16a647c: name 'email' is not defined
+2025-06-19 06:50:32,087 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Security Alerts'} for email 19783aa6fd85c451: name 'email' is not defined
+2025-06-19 06:50:33,320 - src.rule_engine - ERROR - Error executing action {'action': 'move', 'mailbox': 'Interview Communications'} for email 1978384374da99d6: name 'email' is not defined
