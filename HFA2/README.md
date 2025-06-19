@@ -1,3 +1,5 @@
+**[Watch Demo Video](https://youtu.be/m9g8T-tSH8M)**
+
 # Email Processing Application
 
 A standalone Python application that integrates with the Gmail API, stores emails in a PostgreSQL database, and processes them based on rules defined in a JSON file.
